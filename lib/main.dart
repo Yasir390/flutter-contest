@@ -9,6 +9,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
 import 'package:training_app/constants/app_constants.dart';
 import 'package:training_app/constants/custome_theme.dart';
+import 'package:training_app/features/restaurant_info_home/presentation/restaurant_info_screen.dart';
 import 'package:training_app/helpers/all_routes.dart';
 import 'package:training_app/helpers/di.dart';
 import 'package:training_app/helpers/helper_methods.dart';
@@ -101,7 +102,7 @@ class UtillScreenMobile extends StatelessWidget {
             },
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
-            home: const RestaurantTestScreen(),
+            home: RestaurantInfoHomeScreen(),
           ),
         );
       },
