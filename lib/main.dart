@@ -17,6 +17,7 @@ import 'package:training_app/helpers/navigation_service.dart';
 import 'package:training_app/helpers/register_provider.dart';
 import 'package:training_app/loading_screen.dart';
 import 'package:training_app/networks/dio/dio.dart';
+import 'package:training_app/test_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -100,7 +101,7 @@ class UtillScreenMobile extends StatelessWidget {
             },
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
-            home: const Loading(),
+            home: const RestaurantTestScreen(),
           ),
         );
       },
